@@ -1,6 +1,11 @@
 $( document ).ready(function() {
 
-    $(".main").onepage_scroll();
+    $(".main").onepage_scroll({
+        keyboard: true,
+        responsiveFallback: 900
+    });
+
+
 
 
     $('.portfolio').slick({
@@ -13,7 +18,7 @@ $( document ).ready(function() {
         slidesToScroll: 4,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1200,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 3,
@@ -22,7 +27,7 @@ $( document ).ready(function() {
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2
@@ -38,7 +43,7 @@ $( document ).ready(function() {
         ]
     });
 
-});
+
 
 
 
@@ -57,7 +62,7 @@ window.requestAnimFrame = (function(){
 
 
 
-$( document ).ready(function() {
+
 
 //*************************************** HTML-circle progress bar **********************************//
 
